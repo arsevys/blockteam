@@ -1,0 +1,18 @@
+import 
+
+namespace org.blockteam.vuelos.cto
+
+
+asset Vuelos identified by idVuelos {
+  o String idVuelos
+  o String origen
+  o String destino
+  o String precio
+  o String cantidadPasajes
+  o String estado
+  o String horario
+}
+
+
+
+

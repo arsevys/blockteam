@@ -16,4 +16,19 @@
  * Write your model definitions here
  */
 
-namespace org.blockteam
+namespace org.blockteam.empleados.cto
+
+participant Empleados identified by idEmpleado {
+  o String idEmpleado
+  o String nombre 
+  o String user
+  o String psw
+  o String estado optional
+  o String acceso
+}
+
+
+
+
+
+

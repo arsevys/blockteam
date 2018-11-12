@@ -1,0 +1,41 @@
+
+
+query listarEmpleadosTodos {
+	description: "lista los empleados "
+	statement:
+		SELECT org.blockteam.empleados.cto.Empleados
+		
+	}
+
+query listarVuelosActivos {
+	description: "lista los vuelos activos "
+	statement:
+		SELECT org.blockteam.vuelos.cto.Vuelos
+		   WHERE (estado == "A")
+		
+	}
+
+
+query listarVentas {
+	description: "lista los ventas "
+	statement:
+		SELECT org.blockteam.ventas.cto.Ventas
+		  	
+	}
+
+
+query listarVentasxCliente {
+	description: "lista los ventas de un cliente"
+	statement:
+		SELECT org.blockteam.ventas.cto.Ventas
+		WHERE ( nombre ==  _$nombre )
+		  	
+	}
+
+
+query listarAviones {
+	description: "lista los aviones"
+	statement:
+		SELECT org.blockteam.avion.cto.Avion
+		  	
+	}
